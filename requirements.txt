@@ -16,4 +16,5 @@ typing-extensions==3.10.0.0
 Werkzeug==2.0.1
 wincertstore==0.2
 zipp==3.4.1
+pandas>=0.19
 gunicorn
