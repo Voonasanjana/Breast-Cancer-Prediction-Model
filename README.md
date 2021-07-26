@@ -1,7 +1,7 @@
 # Breast-Cancer-Prediction-Model
 Machine Learning Web App Built Using Flask Deployed on Heroku
 
-<img src="https://www.flushinghospital.org/newsletter/wp-content/uploads/2019/09/fattyliverpic.jpg">
+<img src="https://github.com/Voonasanjana/Breast-Cancer-Prediction-Model/blob/main/Screenshot%20(44).png" width=600 >
 
 • This repository consists of files required to deploy a Machine Learning Web App created with Flask and deployed using Heroku platform.
 
