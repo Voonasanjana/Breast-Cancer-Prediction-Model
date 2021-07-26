@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Breast Cancer Prediction Model</title>
+
+</head>
+<body>
+    <div class="container">
+        
+        <h2 class='container-heading' ><span class="heading_font">Breast Cancer Prediction</span>
+            
+        </h2>
+    </div>
+
+    <div class="ml-container">
+        
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br>
+            <h3>MeanRadius</h3>
+            <input id="first" name="mean_radius" placeholder="Range Between  5 to 30" required="required">
+            <br>
+            <h3>MeanTexture</h3>
+            <input id="second" name="mean_texture" placeholder="Range Between  1 to 50" required="required">
+            <br>
+            <h3>MeanPerimeter</h3>
+            <input id="third" name="mean_perimeter" placeholder="Range Between  40 to 200" required="required">
+            <br>
+            <h3>MeanArea</h3>
+            <input id="fourth" name="mean_area" placeholder="Range Between  100 to 200" required="required">
+            <br>
+            <h3>MeanSmoothness</h3>
+            <input id="fifth" name="mean_smoothness" placeholder="Range Between  0.01 to 0.5" required="required">
+            <br>
+            <br>
+            <br>
+            <button id="sub" type="submit ">Submit</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class='footer-description'>©2021 voona sanjana</p>
+
+        </form>
+    </div>
+
+   
+
+
+<style>
+
+/* Background Image */
+body {
+	background: linear-gradient(-45deg, #ee7752, #520623, #b9d5df, #055542);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* Color */
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Heading Font */
+.container-heading{
+  padding: 30px;
+  text-align: center;
+  background: #000705;
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  
+  margin:-8px;
+}
+
+.container-heading img {
+  
+  width: 90px;
+  height: 90px;
+  
+  background: rgb(7, 7, 7);
+}
+.heading_font{
+    color: #black;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	font-weight: normal;
+}
+.footer-description {
+            
+                
+            padding: 10px;
+            text-align: center;
+            background: #000a08;
+            color: white;
+            font-size: 20px;
+            
+            margin:-8px;
+ 
+    }
+
+
+
+
+/* Box */
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            width: 250px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            width: 250px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            width: 270px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            width: 270px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth {
+            border-radius: 14px;
+            height: 25px;
+            width: 280px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        
+/* Submit Button */
+#sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</style>
+
+
+</body>
+
+</html>
